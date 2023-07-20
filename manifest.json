@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "popup manifester",
+    "version": "1.0",
+    "description": "buttons to display small popup windows of websites",
+    "permissions": ["tabs", "scripting", "storage", "windows"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
